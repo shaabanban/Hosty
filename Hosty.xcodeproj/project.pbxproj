@@ -18,14 +18,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A70B6230237AF87000A2BA73 /* Ambar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ambar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A70B6230237AF87000A2BA73 /* Hosty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hosty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A70B6233237AF87000A2BA73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A70B6235237AF87000A2BA73 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A70B6237237AF87700A2BA73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A70B623A237AF87700A2BA73 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A70B623D237AF87700A2BA73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A70B623F237AF87700A2BA73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A70B6240237AF87700A2BA73 /* Ambar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Ambar.entitlements; sourceTree = "<group>"; };
+		A70B6240237AF87700A2BA73 /* Hosty.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hosty.entitlements; sourceTree = "<group>"; };
 		A70B624B237B003900A2BA73 /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
 		A70B624F237B022700A2BA73 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A70B6251237B078200A2BA73 /* EventMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
@@ -45,7 +45,7 @@
 		A70B6227237AF87000A2BA73 = {
 			isa = PBXGroup;
 			children = (
-				A70B6232237AF87000A2BA73 /* Ambar */,
+				A70B6232237AF87000A2BA73 /* Hosty */,
 				A70B6231237AF87000A2BA73 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,12 +53,12 @@
 		A70B6231237AF87000A2BA73 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A70B6230237AF87000A2BA73 /* Ambar.app */,
+				A70B6230237AF87000A2BA73 /* Hosty.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A70B6232237AF87000A2BA73 /* Ambar */ = {
+		A70B6232237AF87000A2BA73 /* Hosty */ = {
 			isa = PBXGroup;
 			children = (
 				A70B6233237AF87000A2BA73 /* AppDelegate.swift */,
@@ -68,10 +68,10 @@
 				A70B623C237AF87700A2BA73 /* Main.storyboard */,
 				A70B624F237B022700A2BA73 /* MainViewController.swift */,
 				A70B623F237AF87700A2BA73 /* Info.plist */,
-				A70B6240237AF87700A2BA73 /* Ambar.entitlements */,
+				A70B6240237AF87700A2BA73 /* Hosty.entitlements */,
 				A70B6239237AF87700A2BA73 /* Preview Content */,
 			);
-			path = Ambar;
+			path = Hosty;
 			sourceTree = "<group>";
 		};
 		A70B6239237AF87700A2BA73 /* Preview Content */ = {
@@ -102,9 +102,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A70B622F237AF87000A2BA73 /* Ambar */ = {
+		A70B622F237AF87000A2BA73 /* Hosty */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A70B6243237AF87700A2BA73 /* Build configuration list for PBXNativeTarget "Ambar" */;
+			buildConfigurationList = A70B6243237AF87700A2BA73 /* Build configuration list for PBXNativeTarget "Hosty" */;
 			buildPhases = (
 				A70B622C237AF87000A2BA73 /* Sources */,
 				A70B622D237AF87000A2BA73 /* Frameworks */,
@@ -114,9 +114,9 @@
 			);
 			dependencies = (
 			);
-			name = Ambar;
+			name = Hosty;
 			productName = Ambar;
-			productReference = A70B6230237AF87000A2BA73 /* Ambar.app */;
+			productReference = A70B6230237AF87000A2BA73 /* Hosty.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -134,7 +134,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A70B622B237AF87000A2BA73 /* Build configuration list for PBXProject "Ambar" */;
+			buildConfigurationList = A70B622B237AF87000A2BA73 /* Build configuration list for PBXProject "Hosty" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -147,7 +147,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A70B622F237AF87000A2BA73 /* Ambar */,
+				A70B622F237AF87000A2BA73 /* Hosty */,
 			);
 		};
 /* End PBXProject section */
@@ -309,20 +309,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Ambar/Ambar.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Hosty/Hosty.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_ASSET_PATHS = "\"Ambar/Preview Content\"";
-				DEVELOPMENT_TEAM = 562D22S6BD;
+				DEVELOPMENT_ASSET_PATHS = "Hosty/Preview\\ Content";
+				DEVELOPMENT_TEAM = 3RR5U8KW7C;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Ambar/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Hosty/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				PRODUCT_BUNDLE_IDENTIFIER = com.goldenchopper.Ambar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shaabs.hosty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -332,20 +332,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Ambar/Ambar.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Hosty/Hosty.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_ASSET_PATHS = "\"Ambar/Preview Content\"";
-				DEVELOPMENT_TEAM = 562D22S6BD;
+				DEVELOPMENT_ASSET_PATHS = "Hosty/Preview\\ Content";
+				DEVELOPMENT_TEAM = 3RR5U8KW7C;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Ambar/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Hosty/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				PRODUCT_BUNDLE_IDENTIFIER = com.goldenchopper.Ambar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shaabs.hosty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -354,7 +354,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A70B622B237AF87000A2BA73 /* Build configuration list for PBXProject "Ambar" */ = {
+		A70B622B237AF87000A2BA73 /* Build configuration list for PBXProject "Hosty" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A70B6241237AF87700A2BA73 /* Debug */,
@@ -363,7 +363,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A70B6243237AF87700A2BA73 /* Build configuration list for PBXNativeTarget "Ambar" */ = {
+		A70B6243237AF87700A2BA73 /* Build configuration list for PBXNativeTarget "Hosty" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A70B6244237AF87700A2BA73 /* Debug */,
