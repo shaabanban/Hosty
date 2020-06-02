@@ -15,7 +15,30 @@
 		A70B624C237B003900A2BA73 /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70B624B237B003900A2BA73 /* StatusBarController.swift */; };
 		A70B6250237B022700A2BA73 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70B624F237B022700A2BA73 /* MainViewController.swift */; };
 		A70B6252237B078200A2BA73 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70B6251237B078200A2BA73 /* EventMonitor.swift */; };
+		E2090CF32486A1FE00D8DC67 /* CodeSignUpdate.sh in Resources */ = {isa = PBXBuildFile; fileRef = E2090CF22486A1FE00D8DC67 /* CodeSignUpdate.sh */; };
+		E2090CF72486A43800D8DC67 /* launchd.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2090CF62486A43800D8DC67 /* launchd.plist */; };
+		E2B9825E248574B700369699 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B9825D248574B700369699 /* main.swift */; };
+		E2B982632485878C00369699 /* HelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B982622485878C00369699 /* HelperProtocol.swift */; };
+		E2B982642485878C00369699 /* HelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B982622485878C00369699 /* HelperProtocol.swift */; };
+		E2B9826724858D9000369699 /* CodeSignCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B9826624858D9000369699 /* CodeSignCheck.swift */; };
+		E2B9826824858D9000369699 /* CodeSignCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B9826624858D9000369699 /* CodeSignCheck.swift */; };
+		E2B9826B24858DD600369699 /* HostEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B9826A24858DD600369699 /* HostEntry.swift */; };
+		E2B9826C24858DD600369699 /* HostEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B9826A24858DD600369699 /* HostEntry.swift */; };
+		E2B9826E24858DEA00369699 /* HostGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B9826D24858DEA00369699 /* HostGroup.swift */; };
+		E2B9826F24858DEA00369699 /* HostGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B9826D24858DEA00369699 /* HostGroup.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E2B98259248574B700369699 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A70B6230237AF87000A2BA73 /* Hosty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hosty.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,10 +52,26 @@
 		A70B624B237B003900A2BA73 /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
 		A70B624F237B022700A2BA73 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A70B6251237B078200A2BA73 /* EventMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
+		E2090CF22486A1FE00D8DC67 /* CodeSignUpdate.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = CodeSignUpdate.sh; sourceTree = "<group>"; };
+		E2090CF52486A2DC00D8DC67 /* info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = info.plist; sourceTree = "<group>"; };
+		E2090CF62486A43800D8DC67 /* launchd.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = launchd.plist; sourceTree = "<group>"; };
+		E2B9825B248574B700369699 /* hostyhelper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = hostyhelper; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2B9825D248574B700369699 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		E2B982622485878C00369699 /* HelperProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperProtocol.swift; sourceTree = "<group>"; };
+		E2B9826624858D9000369699 /* CodeSignCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeSignCheck.swift; sourceTree = "<group>"; };
+		E2B9826A24858DD600369699 /* HostEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostEntry.swift; sourceTree = "<group>"; };
+		E2B9826D24858DEA00369699 /* HostGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostGroup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A70B622D237AF87000A2BA73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2B98258248574B700369699 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,7 +84,9 @@
 		A70B6227237AF87000A2BA73 = {
 			isa = PBXGroup;
 			children = (
+				E2B9826524858D5A00369699 /* Common */,
 				A70B6232237AF87000A2BA73 /* Hosty */,
+				E2B9825C248574B700369699 /* hostyhelper */,
 				A70B6231237AF87000A2BA73 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				A70B6230237AF87000A2BA73 /* Hosty.app */,
+				E2B9825B248574B700369699 /* hostyhelper */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,6 +141,36 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		E2B9825C248574B700369699 /* hostyhelper */ = {
+			isa = PBXGroup;
+			children = (
+				E2B9825D248574B700369699 /* main.swift */,
+				E2B982622485878C00369699 /* HelperProtocol.swift */,
+				E2090CF52486A2DC00D8DC67 /* info.plist */,
+				E2090CF62486A43800D8DC67 /* launchd.plist */,
+			);
+			path = hostyhelper;
+			sourceTree = "<group>";
+		};
+		E2B9826524858D5A00369699 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E2B9826924858DBA00369699 /* Model */,
+				E2B9826624858D9000369699 /* CodeSignCheck.swift */,
+				E2090CF22486A1FE00D8DC67 /* CodeSignUpdate.sh */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		E2B9826924858DBA00369699 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E2B9826A24858DD600369699 /* HostEntry.swift */,
+				E2B9826D24858DEA00369699 /* HostGroup.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,18 +191,38 @@
 			productReference = A70B6230237AF87000A2BA73 /* Hosty.app */;
 			productType = "com.apple.product-type.application";
 		};
+		E2B9825A248574B700369699 /* hostyhelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2B9825F248574B700369699 /* Build configuration list for PBXNativeTarget "hostyhelper" */;
+			buildPhases = (
+				E2B98257248574B700369699 /* Sources */,
+				E2B98258248574B700369699 /* Frameworks */,
+				E2B98259248574B700369699 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = hostyhelper;
+			productName = hostyhelper;
+			productReference = E2B9825B248574B700369699 /* hostyhelper */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		A70B6228237AF87000A2BA73 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1110;
-				LastUpgradeCheck = 1110;
-				ORGANIZATIONNAME = "Golden Chopper";
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = Shaabs;
 				TargetAttributes = {
 					A70B622F237AF87000A2BA73 = {
 						CreatedOnToolsVersion = 11.1;
+					};
+					E2B9825A248574B700369699 = {
+						CreatedOnToolsVersion = 11.5;
 					};
 				};
 			};
@@ -148,6 +240,7 @@
 			projectRoot = "";
 			targets = (
 				A70B622F237AF87000A2BA73 /* Hosty */,
+				E2B9825A248574B700369699 /* hostyhelper */,
 			);
 		};
 /* End PBXProject section */
@@ -158,7 +251,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A70B623E237AF87700A2BA73 /* Main.storyboard in Resources */,
+				E2090CF32486A1FE00D8DC67 /* CodeSignUpdate.sh in Resources */,
 				A70B623B237AF87700A2BA73 /* Preview Assets.xcassets in Resources */,
+				E2090CF72486A43800D8DC67 /* launchd.plist in Resources */,
 				A70B6238237AF87700A2BA73 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -171,10 +266,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				A70B6236237AF87000A2BA73 /* ContentView.swift in Sources */,
+				E2B982632485878C00369699 /* HelperProtocol.swift in Sources */,
+				E2B9826B24858DD600369699 /* HostEntry.swift in Sources */,
 				A70B6252237B078200A2BA73 /* EventMonitor.swift in Sources */,
 				A70B624C237B003900A2BA73 /* StatusBarController.swift in Sources */,
+				E2B9826E24858DEA00369699 /* HostGroup.swift in Sources */,
+				E2B9826724858D9000369699 /* CodeSignCheck.swift in Sources */,
 				A70B6234237AF87000A2BA73 /* AppDelegate.swift in Sources */,
 				A70B6250237B022700A2BA73 /* MainViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2B98257248574B700369699 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2B9825E248574B700369699 /* main.swift in Sources */,
+				E2B982642485878C00369699 /* HelperProtocol.swift in Sources */,
+				E2B9826F24858DEA00369699 /* HostGroup.swift in Sources */,
+				E2B9826C24858DD600369699 /* HostEntry.swift in Sources */,
+				E2B9826824858D9000369699 /* CodeSignCheck.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,11 +421,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Hosty/Hosty.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "Hosty/Preview\\ Content";
 				DEVELOPMENT_TEAM = 3RR5U8KW7C;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Hosty/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -322,7 +434,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				PRODUCT_BUNDLE_IDENTIFIER = com.shaabs.hosty;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shaabs.hosty.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -333,11 +445,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Hosty/Hosty.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "Hosty/Preview\\ Content";
 				DEVELOPMENT_TEAM = 3RR5U8KW7C;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Hosty/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -345,7 +458,39 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				PRODUCT_BUNDLE_IDENTIFIER = com.shaabs.hosty;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shaabs.hosty.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		E2B98260248574B700369699 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3RR5U8KW7C;
+				INFOPLIST_FILE = "$(SRCROOT)/hostyhelper/info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shaabs.hosty.helper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E2B98261248574B700369699 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3RR5U8KW7C;
+				INFOPLIST_FILE = "$(SRCROOT)/hostyhelper/info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shaabs.hosty.helper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -368,6 +513,15 @@
 			buildConfigurations = (
 				A70B6244237AF87700A2BA73 /* Debug */,
 				A70B6245237AF87700A2BA73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2B9825F248574B700369699 /* Build configuration list for PBXNativeTarget "hostyhelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2B98260248574B700369699 /* Debug */,
+				E2B98261248574B700369699 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

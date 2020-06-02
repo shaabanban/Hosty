@@ -15,8 +15,24 @@ class AppDelegate: NSObject, NSApplicationDelegate
     var popover = NSPopover.init()
     var statusBar: StatusBarController?
 
+    // MARK Helper Variables
+    private var currentHelperConnection: NSXPCConnection?
+
+    @objc dynamic private var currentHelperAuthData: NSData?
+    private let currentHelperAuthDataKeyPath: String
+
+    @objc dynamic private var helperIsInstalled = false
+    private let helperIsInstalledKeyPath: String
+
+    override init() {
+        self.currentHelperAuthDataKeyPath = NSStringFromSelector(#selector(getter: self.currentHelperAuthData))
+        self.helperIsInstalledKeyPath = NSStringFromSelector(#selector(getter: self.helperIsInstalled))
+        super.init()
+    }
+    
     func applicationDidFinishLaunching(_ aNotification: Notification)
     {
+        
         // Create the SwiftUI view that provides the contents
         let contentView = ContentView()
 
@@ -33,5 +49,7 @@ class AppDelegate: NSObject, NSApplicationDelegate
     {
         // Insert code here to tear down your application
     }
+    
+    
 }
 

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+   launchd.plist
+   Hosty
+
+   Created by Ahmed Shaaban on 6/2/20.
+   Copyright (c) 2020 Shaabs. All rights reserved.
+-->
+<plist version="1.0">
+    <dict>
+	<key>Label</key>
+	<string>com.shaabs.hosty.helper</string>
+	<key>MachServices</key>
+	<dict>
+		<key>com.shaabs.hosty.helper</key>
+		<true/>
+	</dict>
+</dict>
+</plist>
