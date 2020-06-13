@@ -9,15 +9,22 @@
 import Foundation
 
 // just make it easy to go back and forth between a struct and a string
-struct HostEntry: ExpressibleByStringLiteral, CustomStringConvertible {
+struct HostEntry: ExpressibleByStringLiteral, CustomStringConvertible, Hashable {
     var ip: String;
     var hosts: [String]
-    var enabled: Bool;
+    var enabled: Bool {
+        didSet {
+            rawText = "\(enabled ? "": "#") \(ip)\t\(hosts.joined(separator: "\t"))"
+        }
+    };
+    
+    var rawText: String;
     var description: String {
-        return "\(enabled ? "": "#") \(ip)\t\(hosts.joined(separator: "\t"))"
+        return self.rawText;
    }
     
     init(_ string: String){
+        self.rawText = string;
         var trimmedString = string.trimmingCharacters(in: .whitespaces);
         // if the start of the line is a # then its disabled
         self.enabled = !trimmedString.hasPrefix("#");

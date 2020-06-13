@@ -38,7 +38,7 @@ class AppDelegate: NSObject, NSApplicationDelegate
 
         // Set the SwiftUI's ContentView to the Popover's ContentViewController
         popover.contentViewController = MainViewController()
-        popover.contentSize = NSSize(width: 360, height: 360)
+        popover.contentSize = NSSize(width: 500, height: 360)
         popover.contentViewController?.view = NSHostingView(rootView: contentView)
         
         // Create the Status Bar Item with the Popover
@@ -53,3 +53,9 @@ class AppDelegate: NSObject, NSApplicationDelegate
     
 }
 
+
+struct AppDelegate_Previews: PreviewProvider {
+    static var previews: some View {
+        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
+    }
+}

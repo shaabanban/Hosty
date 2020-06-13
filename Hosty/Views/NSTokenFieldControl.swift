@@ -1,0 +1,53 @@
+//
+//  NSTokenFieldControl.swift
+//  Hosty
+//
+//  Created by Ahmed Shaaban on 6/13/20.
+//  Copyright © 2020 Shaabs. All rights reserved.
+//
+
+import Foundation
+import AppKit
+import SwiftUI
+
+struct NSTokenFieldControl: NSViewRepresentable {
+    @Binding var text: String;
+    func makeCoordinator() -> Coordinator {
+        Coordinator(self)
+    }
+    
+    typealias NSViewType = NSTokenField
+    
+    
+    func makeNSView(context: Context) -> NSTokenField {
+        var view = NSTokenField()
+        view.delegate = context.coordinator
+        view.tokenizingCharacterSet = [" ", "\t"]
+        return view;
+    }
+    
+    func updateNSView(_ nsView: NSTokenField, context: Context) {
+        nsView.stringValue = text
+    }
+    
+}
+
+extension NSTokenFieldControl {
+    class Coordinator: NSObject, NSTokenFieldDelegate {
+        var parent: NSTokenFieldControl
+        
+        init(_ parent: NSTokenFieldControl) {
+            self.parent = parent
+        }
+        
+        func controlTextDidEndEditing(_ notification: Notification) {
+            guard let textView = notification.object as? NSTokenField else {
+                return
+            }
+            
+            self.parent.text = textView.stringValue
+        }
+        
+        
+    }
+}
