@@ -39,6 +39,13 @@ extension NSTokenFieldControl {
         init(_ parent: NSTokenFieldControl) {
             self.parent = parent
         }
+
+        func tokenField(_ tokenField: NSTokenField, shouldAdd tokens: [Any], at index: Int) -> [Any] {
+            // I don't like this hack... Basically it emits a change before adding tokens
+            self.parent.text = tokenField.stringValue
+
+            return tokens
+        }
         
         func controlTextDidEndEditing(_ notification: Notification) {
             guard let textView = notification.object as? NSTokenField else {

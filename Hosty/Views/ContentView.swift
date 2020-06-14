@@ -41,13 +41,14 @@ struct ContentView: View {
                                       HostEntry("192.168.1.1   localhost  flarp")])
     
     var body: some View {
+        
         let filteredHosts = self.hosts.enumerated().map { (index, item) -> IndexedHostEntry in
             return IndexedHostEntry(hostEntry: item, index: index)
         }.filter { (he: IndexedHostEntry) -> Bool in
             if(searchText.count == 0) {
                 return true;
             }
-            return he.hostEntry.description.contains(searchText)
+            return he.hostEntry.description.uppercased().contains(searchText.uppercased())
         }
         
         return VStack(alignment: .leading, spacing: 0) {
@@ -71,7 +72,7 @@ struct ContentView: View {
                 }
             }.foregroundColor(.secondary)
                 .background(backgroundColor)
-            
+            if(filteredHosts.count > 0) {
             ScrollView {
                 ForEach(filteredHosts, id:\.index) { fh in
                     return HostEntryView(hostEntry: Binding<HostEntry>(
@@ -86,10 +87,19 @@ struct ContentView: View {
                     }
                     
                 }
-            }.padding(5)
+            }.padding(5).frame(width: 500, height: 400, alignment: .top)
+            } else {
+                VStack(alignment: .center) {
+                    Text("No Entries")
+                        .font(.title)
+                        .multilineTextAlignment(.center)
+                }
+                .frame(width: 500.0, height: 100.0)
+            }
+
         }
         .padding(0)
-        //        .frame(width: 500.0, height: 360, alignment: .top)
+                .frame(width: 500.0, alignment: .top)
     }
 }
 

@@ -20,6 +20,7 @@ import AppKit
 
 struct HostEntryView: View {
     @Binding var hostEntry: HostEntry;
+    
     var delete:  (() -> Void)?
     var body: some View {
         let textVal = Binding<String>(
@@ -42,9 +43,9 @@ struct HostEntryView: View {
             Toggle("", isOn: self.$hostEntry.enabled)
             NSTokenFieldControl(text: textVal)
             if self.delete != nil {
-                Button(action: self.delete!) {
-                    Text("Delete")
-                }
+                Button("Delete",action: {
+                    self.delete!()
+                })
                 Spacer()
             }
         }.padding(.leading, 10)

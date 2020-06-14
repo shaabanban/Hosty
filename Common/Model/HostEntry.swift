@@ -21,7 +21,7 @@ struct HostEntry: ExpressibleByStringLiteral, CustomStringConvertible, Hashable 
     var rawText: String;
     var description: String {
         return self.rawText;
-   }
+    }
     
     init(_ string: String){
         self.rawText = string;

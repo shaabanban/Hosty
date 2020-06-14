@@ -18,9 +18,7 @@
 		E2090CF32486A1FE00D8DC67 /* CodeSignUpdate.sh in Resources */ = {isa = PBXBuildFile; fileRef = E2090CF22486A1FE00D8DC67 /* CodeSignUpdate.sh */; };
 		E2090CF72486A43800D8DC67 /* launchd.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2090CF62486A43800D8DC67 /* launchd.plist */; };
 		E246324D2495479A00F3C8DB /* NSTokenFieldControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E246324C2495479A00F3C8DB /* NSTokenFieldControl.swift */; };
-		E292FCE5248D688F00AA293C /* TokenTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E292FCE4248D688F00AA293C /* TokenTextView.swift */; };
 		E29F1A332488103F003E213D /* HostEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29F1A322488103F003E213D /* HostEntryView.swift */; };
-		E2ADA3A7248C07BD0054F427 /* AttributedTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ADA3A6248C07BD0054F427 /* AttributedTextView.swift */; };
 		E2B9825E248574B700369699 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B9825D248574B700369699 /* main.swift */; };
 		E2B982632485878C00369699 /* HelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B982622485878C00369699 /* HelperProtocol.swift */; };
 		E2B982642485878C00369699 /* HelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B982622485878C00369699 /* HelperProtocol.swift */; };
@@ -60,9 +58,7 @@
 		E2090CF52486A2DC00D8DC67 /* info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = info.plist; sourceTree = "<group>"; };
 		E2090CF62486A43800D8DC67 /* launchd.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = launchd.plist; sourceTree = "<group>"; };
 		E246324C2495479A00F3C8DB /* NSTokenFieldControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSTokenFieldControl.swift; sourceTree = "<group>"; };
-		E292FCE4248D688F00AA293C /* TokenTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenTextView.swift; sourceTree = "<group>"; };
 		E29F1A322488103F003E213D /* HostEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostEntryView.swift; sourceTree = "<group>"; };
-		E2ADA3A6248C07BD0054F427 /* AttributedTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedTextView.swift; sourceTree = "<group>"; };
 		E2B9825B248574B700369699 /* hostyhelper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = hostyhelper; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2B9825D248574B700369699 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		E2B982622485878C00369699 /* HelperProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperProtocol.swift; sourceTree = "<group>"; };
@@ -146,8 +142,6 @@
 			children = (
 				A70B6235237AF87000A2BA73 /* ContentView.swift */,
 				E29F1A322488103F003E213D /* HostEntryView.swift */,
-				E2ADA3A6248C07BD0054F427 /* AttributedTextView.swift */,
-				E292FCE4248D688F00AA293C /* TokenTextView.swift */,
 				E246324C2495479A00F3C8DB /* NSTokenFieldControl.swift */,
 			);
 			path = Views;
@@ -278,9 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A70B6236237AF87000A2BA73 /* ContentView.swift in Sources */,
-				E2ADA3A7248C07BD0054F427 /* AttributedTextView.swift in Sources */,
 				E2B982632485878C00369699 /* HelperProtocol.swift in Sources */,
-				E292FCE5248D688F00AA293C /* TokenTextView.swift in Sources */,
 				E2B9826B24858DD600369699 /* HostEntry.swift in Sources */,
 				A70B6252237B078200A2BA73 /* EventMonitor.swift in Sources */,
 				A70B624C237B003900A2BA73 /* StatusBarController.swift in Sources */,
