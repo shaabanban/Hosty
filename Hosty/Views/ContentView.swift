@@ -26,22 +26,13 @@ struct ContentView: View {
     
     @State var searchText: String = ""
     @State var hosts: [HostEntry] = ([HostEntry("192.168.1.1   localhost  flarp"),
-                                      HostEntry("192.168.1.1   localhost  flarp"),
-                                      HostEntry("192.168.1.1   localhost  flarp"),
-                                      HostEntry("192.168.1.1   localhost  flarp"),
-                                      HostEntry("192.168.1.1   localhost  flarp"),
-                                      HostEntry("192.168.1.1   localhost  flarp"),
-                                      HostEntry("192.168.1.1   localhost  flarp"),
-                                      HostEntry("192.168.1.1   localhost  flarp"),
-                                      HostEntry("192.168.1.1   localhost  flarp"),
-                                      HostEntry("192.168.1.1   localhost  flarp"),
-                                      HostEntry("192.168.1.1   localhost  flarp"),
-                                      HostEntry("192.168.1.1   localhost  flarp"),
-                                      HostEntry("192.168.1.1   localhost  flarp"),
-                                      HostEntry("192.168.1.1   localhost  flarp"),
-                                      HostEntry("192.168.1.1   localhost  flarp"),
-                                      HostEntry("192.168.1.1   localhost  flarp"),
-                                      HostEntry("192.168.1.1   localhost  flarp")])
+                                      HostEntry("192.168.1.2   flerbo.com.eg  flarp"),
+                                      HostEntry("192.168.1.3   carpe.diem  flarp"),
+                                      HostEntry("192.168.1.4   google.com"),
+                                      HostEntry("192.168.1.5   auth.test.com"),
+                                      HostEntry("192.168.1.6   localhost"),
+                                      HostEntry("192.168.1.7   localhost")
+    ])
     
     var body: some View {
         
