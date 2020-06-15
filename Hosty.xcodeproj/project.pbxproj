@@ -27,8 +27,6 @@
 		E2B9826824858D9000369699 /* CodeSignCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B9826624858D9000369699 /* CodeSignCheck.swift */; };
 		E2B9826B24858DD600369699 /* HostEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B9826A24858DD600369699 /* HostEntry.swift */; };
 		E2B9826C24858DD600369699 /* HostEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B9826A24858DD600369699 /* HostEntry.swift */; };
-		E2B9826E24858DEA00369699 /* HostGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B9826D24858DEA00369699 /* HostGroup.swift */; };
-		E2B9826F24858DEA00369699 /* HostGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B9826D24858DEA00369699 /* HostGroup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -66,7 +64,6 @@
 		E2B982622485878C00369699 /* HelperProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperProtocol.swift; sourceTree = "<group>"; };
 		E2B9826624858D9000369699 /* CodeSignCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeSignCheck.swift; sourceTree = "<group>"; };
 		E2B9826A24858DD600369699 /* HostEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostEntry.swift; sourceTree = "<group>"; };
-		E2B9826D24858DEA00369699 /* HostGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostGroup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,7 +172,6 @@
 			isa = PBXGroup;
 			children = (
 				E2B9826A24858DD600369699 /* HostEntry.swift */,
-				E2B9826D24858DEA00369699 /* HostGroup.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -280,7 +276,6 @@
 				A70B6252237B078200A2BA73 /* EventMonitor.swift in Sources */,
 				A70B624C237B003900A2BA73 /* StatusBarController.swift in Sources */,
 				E246324D2495479A00F3C8DB /* NSTokenFieldControl.swift in Sources */,
-				E2B9826E24858DEA00369699 /* HostGroup.swift in Sources */,
 				E2B9826724858D9000369699 /* CodeSignCheck.swift in Sources */,
 				A70B6234237AF87000A2BA73 /* AppDelegate.swift in Sources */,
 				E246324F2496C1DA00F3C8DB /* ButtonStyle.swift in Sources */,
@@ -295,7 +290,6 @@
 			files = (
 				E2B9825E248574B700369699 /* main.swift in Sources */,
 				E2B982642485878C00369699 /* HelperProtocol.swift in Sources */,
-				E2B9826F24858DEA00369699 /* HostGroup.swift in Sources */,
 				E2B9826C24858DD600369699 /* HostEntry.swift in Sources */,
 				E2B9826824858D9000369699 /* CodeSignCheck.swift in Sources */,
 			);

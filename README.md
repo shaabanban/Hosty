@@ -1,16 +1,16 @@
-# Ambar
-Ambar is a macOS Menu Bar app built with SwiftUI. It is a template project which means that it can be used as a starting point for a new Menu Bar app (with SwiftUI) project.
-
-<br>
-<p align="center"><img width=40% src="https://www.dropbox.com/s/feqbxi2f3nrdwl3/Ambar%20Hero.png?raw=1"></p>
+# Hosty
+This is a simple menu bar app that provides a gui for searching / editing your hosts file. 
 
 ## Why
-It is for the folks wanting to start developing macOS Catalina Menu Bar apps using SwiftUI.
+When working on infra I find myself adding host file entries often to test something before switching the DNS record. This coincided with me wanting to learn more about SwiftUI so I figured why not. Managed to learn how to use traditional AppKit controls in SwiftUI. That combined with with learning about some of the new(ish) Swift features like property wrappers really helped take a lot of the "magic" out of how SwiftUI works
 
-## Requirements
-1. macOS Catalina 10.15
-2. Xcode 11
+## Thanks
 
-## Contribute
-If you think this project can be improved, you are welcome to contribute. If you build something epic using it, do [let me know](https://twitter.com/AnaghSharma).
+The following repos proved to be extremely helpful:
+
+https://github.com/erikberglund/SwiftPrivilegedHelper
+
+https://github.com/AnaghSharma/Ambar-SwiftUI
+
+
 
