@@ -71,10 +71,10 @@ extension HostEntryView {
 struct HostEntryView_Previews: PreviewProvider {
     static var previews: some View {
         VStack(){
-        HostEntryView(hostEntry: Binding.constant(HostEntry("   192.168.1.1   localhost  flarp")),disabled: false).onDelete {
+            HostEntryView(hostEntry: Binding.constant(HostEntry("   192.168.1.1   localhost  flarp")),disabled: Binding.constant(false)).onDelete {
             
         }
-        HostEntryView(hostEntry: Binding.constant(HostEntry("   192.168.1.1   localhost  flarp")),disabled: true).onDelete {
+            HostEntryView(hostEntry: Binding.constant(HostEntry("   192.168.1.1   localhost  flarp")),disabled: Binding.constant(true)).onDelete {
             
         }
         }
