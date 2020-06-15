@@ -21,7 +21,7 @@ import AppKit
 struct HostEntryView: View {
     @Binding var hostEntry: HostEntry;
     @Binding var disabled: Bool;
-    @State var hovered: Bool = false;
+    
     var delete:  (() -> Void)?
     var body: some View {
         let deleteStyle = IconButtonStyle(normalImage: Image("trash"),
@@ -45,18 +45,17 @@ struct HostEntryView: View {
         
         return HStack {
             Toggle("", isOn: self.$hostEntry.enabled)
+                .disabled(disabled)
             NSTokenFieldControl(text: textVal, disabled: $disabled)
             if self.delete != nil && !self.disabled {
                 Button(action: {
                     self.delete!()
                 }){
                     Spacer()
-                }.buttonStyle(deleteStyle).opacity(hovered ? 1 : 0)
+                }.buttonStyle(deleteStyle)
                 Spacer()
             }
-        }.padding(.leading, 10).frame(height: 22).onHover { (hovered: Bool) in
-            self.hovered = hovered;
-        }
+        }.padding(.leading, 10).frame(height: 22)
     }
 }
 
@@ -72,11 +71,11 @@ struct HostEntryView_Previews: PreviewProvider {
     static var previews: some View {
         VStack(){
             HostEntryView(hostEntry: Binding.constant(HostEntry("   192.168.1.1   localhost  flarp")),disabled: Binding.constant(false)).onDelete {
-            
-        }
+                
+            }
             HostEntryView(hostEntry: Binding.constant(HostEntry("   192.168.1.1   localhost  flarp")),disabled: Binding.constant(true)).onDelete {
-            
-        }
+                
+            }
         }
     }
     

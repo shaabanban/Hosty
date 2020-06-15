@@ -32,7 +32,8 @@ struct NSTokenFieldControl: NSViewRepresentable {
     
     func updateNSView(_ nsView: NSTokenField, context: Context) {
         nsView.stringValue = text
-        nsView.isEditable = disabled?.wrappedValue ?? true;
+        
+        nsView.isEditable = !(disabled?.wrappedValue ?? false);
     }
     
 }
@@ -61,5 +62,11 @@ extension NSTokenFieldControl {
         }
         
         
+    }
+}
+
+struct NSTokenFieldControl_Previews: PreviewProvider {
+    static var previews: some View {
+        NSTokenFieldControl(text: Binding.constant("HelloWorld!"))
     }
 }
