@@ -12,6 +12,9 @@ import SwiftUI
 
 struct NSTokenFieldControl: NSViewRepresentable {
     @Binding var text: String;
+    
+    var disabled: Binding<Bool>?;
+
     func makeCoordinator() -> Coordinator {
         Coordinator(self)
     }
@@ -23,11 +26,13 @@ struct NSTokenFieldControl: NSViewRepresentable {
         var view = NSTokenField()
         view.delegate = context.coordinator
         view.tokenizingCharacterSet = [" ", "\t"]
+        view.stringValue = text;
         return view;
     }
     
     func updateNSView(_ nsView: NSTokenField, context: Context) {
         nsView.stringValue = text
+        nsView.isEditable = disabled?.wrappedValue ?? true;
     }
     
 }

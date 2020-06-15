@@ -95,7 +95,7 @@ struct ContentView: View {
                                     }
                                 }
                         }
-                        )).onDelete {
+                        ), disabled: Binding.constant(false)).onDelete {
                             // I realize that this approach is just asking for trouble
                             // TODO: Persist UUID as part of host entry state, and use the uiud for all edit / delete ops
                             if(fh.index <= self.hosts.count - 1){

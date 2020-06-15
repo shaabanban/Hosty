@@ -20,6 +20,7 @@ import AppKit
 
 struct HostEntryView: View {
     @Binding var hostEntry: HostEntry;
+    @Binding var disabled: Bool;
     @State var hovered: Bool = false;
     var delete:  (() -> Void)?
     var body: some View {
@@ -44,8 +45,8 @@ struct HostEntryView: View {
         
         return HStack {
             Toggle("", isOn: self.$hostEntry.enabled)
-            NSTokenFieldControl(text: textVal)
-            if self.delete != nil {
+            NSTokenFieldControl(text: textVal, disabled: $disabled)
+            if self.delete != nil && !self.disabled {
                 Button(action: {
                     self.delete!()
                 }){
@@ -69,8 +70,13 @@ extension HostEntryView {
 
 struct HostEntryView_Previews: PreviewProvider {
     static var previews: some View {
-        HostEntryView(hostEntry: Binding.constant(HostEntry("   192.168.1.1   localhost  flarp"))).onDelete {
+        VStack(){
+        HostEntryView(hostEntry: Binding.constant(HostEntry("   192.168.1.1   localhost  flarp")),disabled: false).onDelete {
             
+        }
+        HostEntryView(hostEntry: Binding.constant(HostEntry("   192.168.1.1   localhost  flarp")),disabled: true).onDelete {
+            
+        }
         }
     }
     
